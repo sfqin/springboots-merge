@@ -16,8 +16,8 @@ import java.util.Map;
 
 import static org.elasticsearch.index.query.QueryBuilders.matchQuery;
 
-@RestController
-@RequestMapping("/es")
+//@RestController
+//@RequestMapping("/es")
 public class EsController {
 
     @Autowired
@@ -54,7 +54,7 @@ public class EsController {
         return index;
     }
 
-    @PostMapping("updataData")
+    @PostMapping("updateData")
     public Object updataData(@RequestBody EsUser user){
 
 
