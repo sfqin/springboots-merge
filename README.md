@@ -2,7 +2,7 @@
 springboot（稳定版 2.1.3.RELEASE） 整合其它组件
 
 ## 整合 redis-5.0.4
-## 整合 elasticsearch-6.5.4  默认 application.properties 和 esController 已经注释防止项目启动报错
+## 整合 elasticsearch-6.5.4  (默认 application.properties 和 esController 已经注释防止项目启动报错)
   1. 查看集群状态: localhost:9200/_cat/health?v
   2. 查看索引列表: localhost:9200/_cat/indices?v
   3. 查看某个索引库结构：localhost:9200/blog
