@@ -12,3 +12,4 @@ springboot（稳定版 2.1.3.RELEASE） 整合其它组件
 4. 整合 rocketmq-all-4.4.0
   1) rocketmq 安装完成后默认启动需要的内存很多 需要修改 bin 目录下 runbroker.sh 和 runserver.sh 脚本，需要将 JAVA_OPT="${JAVA_OPT} -server 后的参数调小
   2) 使用 rocketmq-console 的坑, 在 github 上 clone 了 rocketmq 的源码后, 进入对应目录使用 maven 命令进行编译，各种jar依赖找不到，解决方案，修改pom文件，将版本号进行对应，修改 application.properties , 修改完成后再进行打包使用
+  3) rocketmq 安装完成以后需要先后启动两个脚本， 第一个是 namesrv ，启动脚本为 nohup sh mqnamesrv & ，第二个是 broker ，nohup sh mqbroker -n 127.0.0.1:9876 & 
